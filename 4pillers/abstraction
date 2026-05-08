@@ -1,0 +1,27 @@
+//code for Encaplsulation/Abstraction
+
+class Student{
+   private:
+  //properties
+  string name;
+  int age;
+  int roll_no;
+  
+  public:
+  void setter(string n,int a,int r){
+      name = n;
+      age = a;
+      roll_no = r;
+  }
+    int getter(){
+        return age;
+    }
+  
+};
+int main(){
+    Student obj;
+    obj.setter("Himanshu",25,02);
+    cout<<obj.getter();
+    
+    return 0;
+}
