@@ -1,0 +1,17 @@
+// code for function overloading
+class FindArea{
+  public:
+  int area (int l,int r){
+      return (l*r);
+  }
+  int area(int r){
+      return r*r;
+  }
+};
+int main(){
+    FindArea obj;
+    cout<<"Area of Rectangle = "<<obj.area(3,4)<<endl;
+    cout<<"Area of Square = "<<obj.area(3)<<endl;
+    
+    return 0;
+}
