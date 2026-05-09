@@ -1,0 +1,29 @@
+//Multilevel Inheritance
+class Human{
+    //properties
+    protected:
+    string name;
+    
+};
+class person:public Human{
+    protected:
+    int age;
+};
+
+//child class : parent class
+class Student:public person{
+    int roll_no;
+    
+    public:
+    Student(string n,int a,int r){
+        name = n;
+        age = a;
+        roll_no = r;
+        
+    }
+    void display(){
+        cout<<name<<
+int main(){
+    Student obj("Himanshu", 20,1146);
+    obj.display();
+}
