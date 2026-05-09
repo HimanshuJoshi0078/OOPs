@@ -1,0 +1,35 @@
+//multiple inherirance//
+#include<iostream>
+
+using namespace std;
+
+class Human{
+    //properties
+    protected:
+    string name;
+    
+};
+class person{
+    protected:
+    int age;
+};
+
+//child class:parent class,parent class//
+class Student:public Human,public person{
+    int roll_no;
+    
+    public:
+    Student(string n,int a,int r){
+        name = n;
+        age = a;
+        roll_no = r;
+        
+    }
+    void display(){
+        cout<<name<<" "<<age<<" "<<roll_no<<endl;
+    }
+};
+int main(){
+    Student obj("Himanshu", 20,1146);
+    obj.display();
+}
